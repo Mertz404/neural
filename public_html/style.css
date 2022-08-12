@@ -1,0 +1,108 @@
+
+/* 
+    Created on : 26 de jul. de 2022, 22:14:00
+    Author     : marce
+*/
+
+body {
+  margin: 0;
+  background: darkgray;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#carCanvas {
+  background: lightgray;
+}
+#networkCanvas {
+  background: black;
+  display:none;
+}
+
+#verticalButtons, #infos{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info {
+  display: block;
+  background-color: aqua;
+  border: 2px solid black;
+  border-radius: 5px 5px;
+  align-items:flex-end;
+}
+.info label span button {
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;;
+  padding: 5px 5px 7px 5px;
+  margin: 2px;
+  cursor: pointer;
+  
+}
+button:hover{
+  background-color: blue;
+}
+
+.cfgPanel{
+  width: 280px;
+  display:flex;
+  flex-direction: column;
+  border: 2px solid black;
+  color: blueviolet;  
+  background-color: aqua;
+  padding: 0.5rem 0.5rem;
+}
+.cfgItem {
+  width: calc(90% - 1rem);
+  border-radius: 0.6rem;
+  color:blueviolet;
+  padding: 0.5rem 1rem;
+  margin:0.2rem;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+.cfgItem div {
+  padding: 0 0.5rem;
+}
+.cfgItem .lbl {
+  color: blueviolet;
+}
+.cfgItem .value {
+  color: black;
+}
+.lbl {
+  display: flex;
+}
+.control {
+  display: flex;
+  align-items: center;
+}
+.btns{
+  display: flex;
+  flex-direction: column;
+}
+.btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  border: none;
+  cursor: pointer;
+  max-height: 0.5rem;
+}
+.btns #btnUp {
+  border-radius: 5px 5px 0 0;
+  line-height: 0.5rem;
+}
+.btns #btnDown {
+  border-radius: 0px 0px 5px 5px;
+  
+}

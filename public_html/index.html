@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vrumm vrumm</title>
+    <meta charset="UTF-8">
+    <META NAME="AUTHOR" CONTENT="Marcelo Augusto Mertz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="cfgPanel">
+
+      <p>Deistância: <span id="travel">000</span></p>
+      <p>Clones: <span id='spClones'></span></p>
+      <input type="range" min="1" max="100" value="20" class="slider" id="slClones">
+      <p>Sensores: <span id='spSensores'></span></p>
+      <input type="range" min="1" max="25" value="7" class="slider" id="slSensores">
+      <p>Ângulo: <span id='spAngle'></span></p>
+      <input type="range" min="1" max="360" value="90" class="slider" id="slAngle">
+      <p>Mutação: <span id='spMutation'></span></p>
+      <input type="range" min="1" max="10" value="1" class="slider" id="slMutation">
+    </div>
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons">
+      <button onclick="restart()" title="Restart">r</button>
+      <button onclick="save()" title="Save">s</button>
+      <button onclick="discard()" title="Discard save">d</button>
+    </div> 
+    <canvas id="networkCanvas"></canvas>
+    <script src="utils.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
